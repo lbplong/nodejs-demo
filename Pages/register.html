@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook-Login or Sign up</title>
+    <link rel="stylesheet" href="../Style/register.css">
+</head>
+
+<body>
+    <div class="testbox">
+        <h1>Registration</h1>
+
+        <form action="/register" method="post">
+            <hr>
+            <%= alertNotify !=="" ? alertNotify: null %>
+                <div class="accounttype">
+                    <input type="radio" value="personal" id="personal" name="accounttype" checked />
+                    <label for="personal" class="radio">Personal</label>
+                    <input type="radio" value="company" id="company" name="accounttype" />
+                    <label for="company" class="radio">Company</label>
+                </div>
+                <hr>
+                <label id="icon" for="email" class=""><em class="icon-envelope "></em></label>
+                <input type="text" name="email" id="email" placeholder="Email" required />
+                <label id="icon" for="username"><em class="icon-user"></em></label>
+                <input type="text" name="username" id="username" placeholder="Name" required />
+                <label id="icon" for="password"><em class="icon-shield"></em></label>
+                <input type="password" name="password" id="password" placeholder="Password" required />
+                <div class="gender">
+                    <input type="radio" value="male" id="male" name="sex" checked />
+                    <label for="male" class="radio">Male</label>
+                    <input type="radio" value="female" id="female" name="sex" />
+                    <label for="female" class="radio">Female</label>
+                </div>
+                <p>By clicking Register, you agree on our <a href="#">terms and condition</a>.</p>
+                <input type="submit" class="button" value="Register" />
+        </form>
+    </div>
+</body>
+
+</html>

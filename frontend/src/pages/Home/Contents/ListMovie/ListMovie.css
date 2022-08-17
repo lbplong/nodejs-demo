@@ -1,0 +1,10 @@
+.container-content {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.list-movie {
+  overflow-y: auto;
+}
